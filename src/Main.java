@@ -3,8 +3,9 @@ public class Main {
 
 	public static void main(String[] args) {
 		
-		//int[] numbers = {-2,1,-3,4,-1,2,1,-5,4};
-		int[] numbers = {-2147483647};
+
+	}
+	public int maxSubArray(int[] nums) {
 		int sum = 0;
 		int highest = Integer.MIN_VALUE;
 		
@@ -13,9 +14,9 @@ public class Main {
 		
 		
 		
-		while(start < numbers.length) {
-			for(int i = start; i < numbers.length; i++) {
-				sum = sum + numbers[i];
+		while(start < nums.length) {
+			for(int i = start; i < nums.length; i++) {
+				sum = sum + nums[i];
 				
 				System.out.println("Sum is " + sum);
 				
@@ -29,14 +30,10 @@ public class Main {
 			}
 	
 			start++;
-			sum = 0;
+			sum = 0; 
 		}
 		
-		System.out.println(highest);
-		
-		
-		
-		
+		return highest;
 	}
 
 }
