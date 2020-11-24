@@ -18,14 +18,10 @@ public class Main {
 			for(int i = start; i < nums.length; i++) {
 				sum = sum + nums[i];
 				
-				System.out.println("Sum is " + sum);
 				
 				if(sum > highest) {
 					highest = sum;
 				}
-				
-				System.out.println("highest is " + highest);
-				System.out.println("");
 				
 			}
 	
